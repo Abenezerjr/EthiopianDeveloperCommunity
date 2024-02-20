@@ -1,0 +1,177 @@
+
+/*.container{*/
+/*  display: grid;*/
+/*}*/
+
+.card {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  border-radius: 24px;
+  background-color: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  /*max-width: clamp(320px, 70vw, 740px);*/
+  max-width: clamp(320px, 70vw, 740px);
+  max-height: 420px;
+
+  min-width: 320px;
+  min-height: 180px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.background {
+  flex: 1 1 250px;
+}
+/*.background{*/
+/*  display: grid;*/
+/*  grid-template-columns: 1fr;*/
+/*}*/
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  /*flex: 1 1 350px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 16px;
+}
+
+.content > h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  margin-bottom: clamp(0.35rem, 2vw, 0.55rem);
+  color: black;
+}
+
+.content > p {
+  font-size: clamp(1rem, 1.75vw, 1.3rem);
+  font-weight: 400;
+  margin: 6px 0;
+  color: black;
+
+}
+
+.content a {
+  color: #000000;
+}
+
+.chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 12px 0px 16px 0px;
+}
+
+.chip {
+  border-radius: 12px;
+  padding: 7px;
+  font-size: 10px;
+  background-color: #1c1c1e;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.chip:hover {
+  background-color: white;
+  color: black;
+}
+
+.action-buttons {
+  border-top: 1px solid gray;
+  padding-top: 16px;
+  gap: 12px;
+  /*display: flex;*/
+  margin-top: auto;
+  /*flex-wrap: wrap;*/
+}
+
+.action-buttons a {
+  /*background-color: red;*/
+  color: #131313;
+  padding: 4px;
+  text-decoration: none;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  /*flex: 1 0 140px;*/
+  /*max-width: 30%;*/
+
+}
+
+.action-buttons a:hover {
+  text-decoration: none;
+  /*background: white;*/
+  /*color: black;*/
+}
+
+.action-buttons a.secondary {
+  /*background-color: #cbcbac;*/
+  color: #21170b;
+  border: 2px solid #000000;
+  /*flex: 1 0 80px;*/
+}
+.action-buttons a.secondary:hover{
+  background: #000000;
+  color: #ffffff;
+}
+
+@media (max-width: 2048px) {
+.action-buttons a {
+  max-width: 40%;
+}
+}
+
+@media (max-width: 1024px) {
+.action-buttons a {
+  max-width: 40%;
+}
+}
+@media (max-width: 760px) {
+  .card {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 420px) {
+  .card {
+    margin-bottom: 0.8rem;
+  }
+  .action-buttons a {
+  /*background-color: red;*/
+  color: #131313;
+  padding: 2px;
+  text-decoration: none;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  /*font-size: 18px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  /*flex: 1 0 140px;*/
+  /*max-width: 20%;*/
+    font-size: 11px;
+
+}
+  .action-buttons a.secondary {
+  /*background-color: #cbcbac;*/
+  color: #21170b;
+  border: 2px solid #000000;
+  /*flex: 1 0 80px;*/
+}
+}

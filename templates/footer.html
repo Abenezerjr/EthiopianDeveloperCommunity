@@ -1,0 +1,73 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/footer.css' %}">
+
+<footer class="footer">
+    <div class="container--footer grid--footer0 grid--footer">
+        <div class="logo-col">
+                <a href="#" class="footer-logo">
+
+        </a>
+            <ul class="social-link">
+                <li><a aria-label="facebook" class="footer-link " href="#"><box-icon type='logo' name='facebook' class="social-icon"></box-icon> </a> </li>
+                <li><a aria-label="instagram"  class="footer-link " href="#"><box-icon name='instagram' type='logo'  class="social-icon"></box-icon></a> </li>
+                 <li><a aria-label="X" class="footer-link " href="#"><box-icon type='logo' name='twitter' class="social-icon"></box-icon></a> </li>
+                 <li><a aria-label="logo" class="footer-link " href="#"></a> </li>
+            </ul>
+            <p class="copyright">Copyright &copy; by EthiopianDevelopersCommunity,
+                Inc.All rights reserved.
+            </p>
+        </div>
+        <div class="address-col">
+            <p class="footer-heading"> Contact us</p>
+            <address class="contacts">
+                <p class="address">
+                    bole bole golagole, 2nd Floor, AddisAbaba,
+                </p>
+                <p>
+                    <a class="footer-link" href="tel:+251993940930">+251993940930</a>
+                </p>
+                <p>
+                    <a class="footer-link" href="mailto:ethiopiandeveloperscommunity@gmail.com">EthDevCommunity.com</a>
+                </p>
+            </address>
+
+        </div>
+        <nav class="nav-col">
+            <p class="footer-heading">
+                Account
+            </p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="{% url 'register'%}">Sign up</a></li>
+                 <li><a class="footer-link"  href="{% url 'login' %}">Sign in</a></li>
+                 <li><a class="footer-link" href="#">iOS app</a></li>
+                <li><a class="footer-link" href="#">Android app</a></li>
+            </ul>
+            </nav>
+         <nav class="nav-col">
+            <p class="footer-heading">
+                Company
+            </p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">About Community</a></li>
+                 <li><a class="footer-link" href="#">For Business</a></li>
+                 <li><a class="footer-link" href="#">partners</a></li>
+                <li><a class="footer-link" href="{% url 'projects' %}">Projects</a></li>
+            </ul>
+            </nav>
+        <nav class="nav-col">
+            <p class="footer-heading">
+               Resource
+            </p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">directory</a></li>
+                 <li><a class="footer-link" href="#">  Help center</a></li>
+                <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            </ul>
+
+
+            </nav>
+
+    </div>
+</footer>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
