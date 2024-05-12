@@ -40,8 +40,15 @@ def logoutUser(request):
     messages.info(request, "User was logged out")
     return redirect('login')
 
+def about(request):
+    context={
+
+    }
+    return render(request , 'home.html', context)
+
 
 def registerUser(request):
+
     page = 'register'
     form = CustomUserCreationForm()
 
