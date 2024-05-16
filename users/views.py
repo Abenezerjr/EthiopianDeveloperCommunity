@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .utils import searchProfile, paginationProfile
-from .models import Profile, Message
+from .models import Profile
 from django.contrib.auth import login, authenticate, logout
 from .forms import CustomUserCreationForm, ProfileForm, SkillForm, MessageForm
 
@@ -40,11 +40,11 @@ def logoutUser(request):
     messages.info(request, "User was logged out")
     return redirect('login')
 
-def about(request):
-    context={
 
+def about(request):
+    context = {
     }
-    return render(request , 'home.html', context)
+    return render(request, 'home.html', context)
 
 
 def registerUser(request):
@@ -64,7 +64,8 @@ def registerUser(request):
             login(request, user)
             return redirect('edit')
         else:
-            messages.error(request, 'an error has occurred during registration')
+            messages.error(request,
+                           'an error has occurred during registration')
 
     context = {
         "page": page,
