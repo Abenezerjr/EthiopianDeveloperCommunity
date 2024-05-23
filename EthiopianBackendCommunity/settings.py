@@ -118,20 +118,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'EthiopianBackendCommunity.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-#
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'edc',
-#         'USER': 'postgres',
-#         'PASSWORD': 'jb0105',
-#         'HOST': 'localhost',
-#         'POST': '5432',
-#
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
