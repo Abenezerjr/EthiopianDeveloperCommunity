@@ -20,7 +20,7 @@ def createProfile(sender, instance, created, **kwargs):
 
         )
         subject = 'Wellcome to Ethiopian Developer community'
-        message = 'wa are programmers  we have not life hahaha ,, demet'
+        message = 'wa are programmers  we have not life wellcome to the best developer community ,,,'
         send_mail(
             subject,
             message,
