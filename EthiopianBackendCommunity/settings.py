@@ -31,7 +31,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary_storage',
     'django.contrib.staticfiles',
     'projects.apps.ProjectsConfig',
     'users.apps.UsersConfig',
@@ -40,11 +39,11 @@ INSTALLED_APPS = [
 
 ]
 
-CLOUDINARY_STORAGE={
-  'CLOUD_NAME':'ddvlf2ran',
-  "API_KEY":'628494544731312',
-  'API_SECRET':'IplG9gpbOnd2wMjprIAgf5WPY-Q'
-}
+# CLOUDINARY_STORAGE={
+#   'CLOUD_NAME':'ddvlf2ran',
+#   "API_KEY":'628494544731312',
+#   'API_SECRET':'IplG9gpbOnd2wMjprIAgf5WPY-Q'
+# }
 
 
 SIMPLE_JWT = {
@@ -194,8 +193,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')  # where to upload an image any time the user add
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
