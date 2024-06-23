@@ -1,8 +1,6 @@
-
-body{
-   background-color: black;
+body {
+  background-color: black;
 }
-
 
 :root {
   --color-sub: #ffffff;
@@ -10,14 +8,12 @@ body{
 
 .btn--sub {
   background-color: var(--color-sub-light);
-    border: 2px solid var(--color-light);
+  border: 2px solid var(--color-light);
 }
 
 .card {
   border: 2px solid var(--color-light);
 }
-
-
 
 .tag > i.im {
   font-size: 1.5rem;
@@ -66,11 +62,11 @@ body{
   display: none;
 }
 
-.header__nav input[type='checkbox'] {
+.header__nav input[type="checkbox"] {
   display: none;
 }
 
-.header__nav input[type='checkbox']:checked ~ .header__menu {
+.header__nav input[type="checkbox"]:checked ~ .header__menu {
   opacity: 1;
   pointer-events: all;
 }
@@ -108,7 +104,7 @@ body{
   .toggle-menu__lines::before,
   .toggle-menu__lines::after {
     pointer-events: none;
-    content: '';
+    content: "";
     display: block;
     height: 2px;
     width: 2.5rem;
@@ -129,17 +125,26 @@ body{
     transform-origin: 0 0;
   }
 
-  .header__nav input[type='checkbox']:checked + .toggle-menu > .toggle-menu__lines::before {
+  .header__nav
+    input[type="checkbox"]:checked
+    + .toggle-menu
+    > .toggle-menu__lines::before {
     margin-left: 3px;
     transform: rotate(45deg) scaleX(1.2) translateX(-2px) translateY(-4px);
     visibility: visible;
   }
 
-  .header__nav input[type='checkbox']:checked + .toggle-menu > .toggle-menu__lines {
+  .header__nav
+    input[type="checkbox"]:checked
+    + .toggle-menu
+    > .toggle-menu__lines {
     visibility: hidden;
   }
 
-  .header__nav input[type='checkbox']:checked + .toggle-menu > .toggle-menu__lines::after {
+  .header__nav
+    input[type="checkbox"]:checked
+    + .toggle-menu
+    > .toggle-menu__lines::after {
     transform: rotate(-45deg) scaleX(1.2) translateX(-2px) translateY(3px);
     visibility: visible;
   }
@@ -155,8 +160,8 @@ body{
     bottom: 0;
     right: 0;
 
-     background: rgba(24, 23, 23, 0.4);
-     backdrop-filter: blur(10px);
+    background: rgba(24, 23, 23, 0.4);
+    backdrop-filter: blur(10px);
     transition: all 0.5s ease-in-out;
   }
 
@@ -181,14 +186,14 @@ body{
   display: flex;
   align-items: center;
   border-bottom: 1px solid #656565;
-
 }
 
 .hero-section__box {
   margin-bottom: 4rem;
 }
 
-.hero-section__box > h2,h5,
+.hero-section__box > h2,
+h5,
 .hero-section__box > h2 > span {
   font-size: 4rem;
   color: var(--color-light);
@@ -197,7 +202,8 @@ body{
 }
 
 @media screen and (max-width: 1000px) {
-  .hero-section__box > h2,h5,
+  .hero-section__box > h2,
+  h5,
   .hero-section__box > h2 > span {
     font-size: 3.4rem;
   }
@@ -288,9 +294,8 @@ body{
   font-size: 2rem;
   font-weight: 700;
 }
-.devlist .dev .dev__meta h3{
+.devlist .dev .dev__meta h3 {
   color: white;
-
 }
 .devlist .dev .dev__meta h5 {
   color: var(--color-text);
@@ -367,14 +372,9 @@ body{
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-
-
-
 }
-.dev__social img{
-
+.dev__social img {
   width: 50%;
-
 }
 
 .devInfo {
@@ -422,22 +422,15 @@ body{
   .devSkill__info {
     flex-basis: 80%;
   }
-
 }
 @media (max-width: 720px) {
-   .project-description{
+  .project-description {
     font-size: 0.8rem;
-
   }
-
-
-
 }
 @media (max-width: 590px) {
-        .project-description{
-
-          display: none;
-
+  .project-description {
+    display: none;
   }
 }
 /*=======================
@@ -457,7 +450,6 @@ body{
   }
 }
 
-
 .singleProject__toolStack {
   margin-top: 2rem;
   margin-bottom: 4rem;
@@ -469,10 +461,9 @@ body{
   border: 2px solid #ffffff;
   padding: 0.4rem 0.4rem;
 }
-.singleLink{
+.singleLink {
   stroke: white;
   font-size: 10px;
-
 }
 
 .singleProject__liveLink:hover {
@@ -506,14 +497,14 @@ body{
   margin-bottom: 3rem;
 }
 
-.project__author{
+.project__author {
   font-size: 1.4rem;
   font-style: italic;
 }
 
-.project--rating{
+.project--rating {
   margin-bottom: 1.6em;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .singleProject__subtitle {
@@ -564,7 +555,7 @@ body{
   /*color: var(--color-sub);*/
   color: white;
 }
-.project__title h3{
+.project__title h3 {
   color: white;
 }
 
@@ -659,7 +650,7 @@ body{
   object-fit: contain;
 }
 
-.settings__tableInfo{
+.settings__tableInfo {
   width: 100%;
 }
 
@@ -698,14 +689,13 @@ body{
 .auth::after {
   z-index: -1;
   opacity: 0.1;
-  content: '';
+  content: "";
   display: block;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background: url(../images/pattern.jpg);
 }
 
 .auth > .card {
@@ -787,32 +777,27 @@ body{
   padding: 0.5rem 3rem;
   border: 2px solid var(--color-light);
   border-radius: 0.7rem;
-
 }
 
 .message {
   padding: 2.5rem 0;
-
-
 }
 
 .message > a span {
   font-size: 1.45rem;
   font-weight: 500;
-
 }
 
 .message.message--unread a span {
   font-weight: 700;
   color: var(--color-sub);
 }
-.message.message--unread a span{
+.message.message--unread a span {
   color: red;
 }
 
 .message:not(:last-child) {
   border-bottom: 2px solid var(--color-white-light);
-
 }
 
 .message > a {
@@ -877,7 +862,6 @@ body{
 .backButton i {
   font-size: 1.8rem;
 }
-
 
 /*=======================
   Form Page

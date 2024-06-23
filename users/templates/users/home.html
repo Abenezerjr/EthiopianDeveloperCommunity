@@ -1,198 +1,203 @@
-{% extends 'main.html' %}
-{% load static %}
-{% static '' %}
-{% block content %}
+{% extends 'main.html' %} {% load static %} {% static '' %} {% block content %}
 
-<link rel="stylesheet" href="{% static 'styles/home.css' %}">
-<link rel="stylesheet" href="{% static 'styles/swiper-bundle.min.css' %}">
+<link rel="stylesheet" href="{% static 'styles/home.css' %}" />
+<link rel="stylesheet" href="{% static 'styles/swiper-bundle.min.css' %}" />
 
-<section class="section-hero ">
+<section class="section-hero">
   <div class="hero">
-   <div class="hero-text-box">
-<h1 class="heading-primary1">ETHIOPIAN DEVELOPERS COMMUNITY</h1>
-     <p class="hero-description">
-         where developers can join, showcase their work, collaborate on projects,
-         and vote for their favorite projects. The platform encourages
-         community engagement by offering winning prizes to projects that
-         receive the highest number of votes. It's a space for Ethiopian
-         developers to connect, share their expertise,
-         and celebrate innovative projects within the community."
-     </p>
-   </div>
+    <div class="hero-text-box">
+      <h1 class="heading-primary1">ETHIOPIAN DEVELOPERS COMMUNITY</h1>
+      <p class="hero-description">
+        where developers can join, showcase their work, collaborate on projects,
+        and vote for their favorite projects. The platform encourages community
+        engagement by offering winning prizes to projects that receive the
+        highest number of votes. It's a space for Ethiopian developers to
+        connect, share their expertise, and celebrate innovative projects within
+        the community."
+      </p>
+    </div>
 
-
-  <div class="hero-image-box">
-    <img src="{% static 'images/developers.png' %}" alt="hear" class="hero-imag"/>
+    <div class="hero-image-box">
+      <img
+        src="{% static 'images/developers.png' %}"
+        alt="hear"
+        class="hero-imag"
+      />
     </div>
   </div>
 </section>
-     <div class="container1 grid grid--4--cols">
-            <div class="featured">
-                 <box-icon class="featured-icon" name='code-alt'></box-icon>
-                <p class="featured-title">Source Code</p>
-                 <p class="featured-text" >You have the opportunity to access the source
-                     code for the completed project.</p>
-            </div>
-              <div class="featured">
-                   <box-icon class="featured-icon" name='male-female' ></box-icon>
+<div class="container1 grid grid--4--cols">
+  <div class="featured">
+    <box-icon class="featured-icon" name="code-alt"></box-icon>
+    <p class="featured-title">Source Code</p>
+    <p class="featured-text">
+      You have the opportunity to access the source code for the completed
+      project.
+    </p>
+  </div>
+  <div class="featured">
+    <box-icon class="featured-icon" name="male-female"></box-icon>
 
-                      <p class="featured-title"> Meet Developers</p>
-                       <p class="featured-text" >
-                          Meet professional developers, engineer, see their work
-                           inspire py their lifestyle
-                  </p>
-              </div>
-              <div class="featured">
-                  <box-icon class="featured-icon" name='book-content' ></box-icon>
-                      <p class="featured-title">ton's of Project</p>
-                      <p class="featured-text" >
-                       +100 projects, project ideas, rode map your for your software
-                          journey
-                      </p>
-              </div>
+    <p class="featured-title">Meet Developers</p>
+    <p class="featured-text">
+      Meet professional developers, engineer, see their work inspire py their
+      lifestyle
+    </p>
+  </div>
+  <div class="featured">
+    <box-icon class="featured-icon" name="book-content"></box-icon>
+    <p class="featured-title">ton's of Project</p>
+    <p class="featured-text">
+      +100 projects, project ideas, rode map your for your software journey
+    </p>
+  </div>
 
-              <div class="featured">
-                   <box-icon class="featured-icon" name='chat'></box-icon>
-                  <p class="featured-title">Send Message</p>
-                  <p class="featured-text" >
-                     send a message and toke to them get experience
-                      work with same project
-              </p>
-              </div>
-
-
-        </div>
-
-<h3 style="text-align: center ; margin-bottom: 6.4rem; margin-top: 9.4rem">Most used Programming language</h3>
-<section class="section-scroll">
-<div class="scroller" data-speed="fast">
-  <ul class="tag-list scroller__inner">
-        <img class="scroll-img" src="{% static 'images/django.png' %}" alt="" />
-        <img src="{% static 'images/icons8-python-48.png' %}" alt="" />
-        <img src="{% static 'images/icons8-c-48.png' %}" alt="" />
-        <img src="{% static 'images/icons8-javascript-64.png' %}" alt="" />
-        <img src="{% static 'images/icons8-react-50.png' %}" alt="" />
-        <img src="{% static 'images/icons8-html-48.png' %}" alt="" />
-        <img src="{% static 'images/icons8-php-48.png' %}" alt="" />
-        <img src="{% static 'images/icons8-node-js-48.png' %}" alt="" />
-        <img src="{% static 'images/icons8-rest-api-64.png' %}" alt="" />
-
-
-  </ul>
+  <div class="featured">
+    <box-icon class="featured-icon" name="chat"></box-icon>
+    <p class="featured-title">Send Message</p>
+    <p class="featured-text">
+      send a message and toke to them get experience work with same project
+    </p>
+  </div>
 </div>
+
+<h3 style="text-align: center; margin-bottom: 6.4rem; margin-top: 9.4rem">
+  Most used Programming language
+</h3>
+<section class="section-scroll">
+  <div class="scroller" data-speed="fast">
+    <ul class="tag-list scroller__inner">
+      <img class="scroll-img" src="{% static 'images/django.png' %}" alt="" />
+      <img src="{% static 'images/icons8-python-48.png' %}" alt="" />
+      <img src="{% static 'images/icons8-c-48.png' %}" alt="" />
+      <img src="{% static 'images/icons8-javascript-64.png' %}" alt="" />
+      <img src="{% static 'images/icons8-react-50.png' %}" alt="" />
+      <img src="{% static 'images/icons8-html-48.png' %}" alt="" />
+      <img src="{% static 'images/icons8-php-48.png' %}" alt="" />
+      <img src="{% static 'images/icons8-node-js-48.png' %}" alt="" />
+      <img src="{% static 'images/icons8-rest-api-64.png' %}" alt="" />
+    </ul>
+  </div>
 </section>
 
-   <section class="container-test">
-      <div class="testimonial mySwiper">
-        <div class="swiper-wrapper">
-          <div class="slide swiper-slide">
-            <img src="{% static 'images/profiles/profile2.jpg' %}" alt="" class="image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
-            </p>
+<section class="container-test">
+  <div class="testimonial mySwiper">
+    <div class="swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img
+          src="{% static 'images/profiles/profile2.jpg' %}"
+          alt=""
+          class="image"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+          saepe provident dolorem a quaerat quo error facere nihil deleniti
+          eligendi ipsum adipisci, fugit, architecto amet asperiores doloremque
+          deserunt eum nemo.
+        </p>
 
-            <i class="bx bxs-quote-alt-left quote-icon"></i>
+        <i class="bx bxs-quote-alt-left quote-icon"></i>
 
-            <div class="details">
-              <span class="name">Abebezer Alemayhu</span>
-              <span class="job">Web Developer</span>
-            </div>
-          </div>
-          <div class="slide swiper-slide">
-            <img src="{% static 'images/profiles/profile1.jpg' %}" alt="" class="image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
-            </p>
-
-            <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-            <div class="details">
-              <span class="name">Kebede lema</span>
-              <span class="job">Web Developer</span>
-            </div>
-          </div>
-          <div class="slide swiper-slide">
-            <img src="{% static 'images/profiles/profile2.jpg' %}" alt="" class="image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
-            </p>
-
-            <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-            <div class="details">
-              <span class="name">Marta Belete</span>
-              <span class="job">Web Developer</span>
-            </div>
-          </div>
+        <div class="details">
+          <span class="name">Abebezer Alemayhu</span>
+          <span class="job">Web Developer</span>
         </div>
-        <div class="swiper-button-next nav-btn"></div>
-        <div class="swiper-button-prev nav-btn"></div>
-        <div class="swiper-pagination"></div>
       </div>
-    </section>
+      <div class="slide swiper-slide">
+        <img
+          src="{% static 'images/profiles/profile1.jpg' %}"
+          alt=""
+          class="image"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+          saepe provident dolorem a quaerat quo error facere nihil deleniti
+          eligendi ipsum adipisci, fugit, architecto amet asperiores doloremque
+          deserunt eum nemo.
+        </p>
 
+        <i class="bx bxs-quote-alt-left quote-icon"></i>
 
-
-
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-
-
-{#    ////////#}
-        <section class=" section-cta " >
-        <div class="container1">
-            <div class="cta">
-            <div class="cta-text-box">
-                <h5 class="heading-secondary">
-                    Join Professional Developers
-                </h5>
-                <p class="cta-text">
-
-                    Foster a dynamic hub for developers to connect, showcase,
-                    and collaborate on innovative projects.
-                    Engage in our community-driven voting system to
-                    celebrate outstanding work. Join us now!
-                </p>
-
-                <a href="{% url 'register' %}"><button class="btn btn--form">Sign up </button></a>
-
-            </div>
-            <div class="cta-img-box" role="img" aria-label="animated chive"> </div>
-</div>
+        <div class="details">
+          <span class="name">Kebede lema</span>
+          <span class="job">Web Developer</span>
         </div>
-    </section>
+      </div>
+      <div class="slide swiper-slide">
+        <img
+          src="{% static 'images/profiles/profile2.jpg' %}"
+          alt=""
+          class="image"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+          saepe provident dolorem a quaerat quo error facere nihil deleniti
+          eligendi ipsum adipisci, fugit, architecto amet asperiores doloremque
+          deserunt eum nemo.
+        </p>
 
-    <script src="{% static 'js/script.js' %}"></script>
-     <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+        <div class="details">
+          <span class="name">Marta Belete</span>
+          <span class="job">Web Developer</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- Link Swiper's CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+{# ////////#}
+<section class="section-cta">
+  <div class="container1">
+    <div class="cta">
+      <div class="cta-text-box">
+        <h5 class="heading-secondary">Join Professional Developers</h5>
+        <p class="cta-text">
+          Foster a dynamic hub for developers to connect, showcase, and
+          collaborate on innovative projects. Engage in our community-driven
+          voting system to celebrate outstanding work. Join us now!
+        </p>
+
+        <a href="{% url 'register' %}"
+          ><button class="btn btn--form">Sign up</button></a
+        >
+      </div>
+      <div class="cta-img-box" role="img" aria-label="animated chive"></div>
+    </div>
+  </div>
+</section>
+
+<script src="{% static 'js/script.js' %}"></script>
+<!-- <script src="{% static 'js/swiper-bundle.min.js' %}"></script> -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 {% endblock %}
